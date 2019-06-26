@@ -1,8 +1,113 @@
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-color: aliceblue;
+}
+
+.header {
+  height: 25vh;
+  width: 100vw;
+  background-color: rgb(25, 111, 160);
+  text-align: center;
+  color: rgb(126, 156, 247);
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+  padding-bottom: 20px;
+  padding-top: 3%;
+  margin: 0;
+}
+
+.todoitem {
+  display: flex;
+  align-items: center;
+}
+
+.todoitem p {
+  font-family: 'Righteous', cursive;
+  padding-left: 15px;
+}
+
+.link {
+  font-family: 'Lobster', cursive;
+  color: rgb(126, 156, 247);
+  text-decoration: none;
+  padding: 25px;
+}
+
+.link:hover {
+  color: antiquewhite;
+}
+
+.btn {
+  font-family: 'DM Serif Text', serif;
+  background-color: lightcoral;
+  color: ghostwhite;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+}
+
+.form {
+  background-color: royalblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputtask {
+  height: 10vh;
+  box-shadow: none;
+  background-color: lightsteelblue;
+  width: 75vw;
+}
+
+.buttonsubmit {
+  font-family: 'DM Serif Text', serif;
+  cursor: pointer;
+  border: none;
+  height: 10vh;
+  width: 25vw;
+  background-color: lightskyblue;
+  color: black;
+  font-size: 1.8rem;
+}
+
+.buttonsubmit:hover {
+  background-color: rgb(112, 196, 248);
+}
+
+.container {
+  border: 1px solid rgba(0, 0, 255, 0.5);
+}
+
+.about {
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .header {
+    height: 15vh;
+  }
+  .inputtask {
+    height: 5vh;
+    width: 100vw;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .buttonsubmit {
+    height: 5vh;
+    width: 100vw;
+    border-bottom: 1px solid royalblue;
+  }
 }
